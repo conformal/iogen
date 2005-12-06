@@ -166,7 +166,7 @@ err_log(int flags, const char *fmt, ...)
 	va_end(ap);
 
 	if (flags & LOGERR)
-		strlcat(buf, strerror(errno_save), sizeof buf);
+		snprintf(buf, sizeof buf, "%s: %s", buf, strerror(errno_save));
 
 	syslog(flags & LOGFATAL ? LOG_CRIT : LOG_NOTICE, buf);
 
