@@ -68,6 +68,10 @@ The default is 1.
 This determins the read vs write distribution.
 The range is from 10% to 90%.
 The default is 50.
+.It Fl P Ar pattern
+Pattern is a whole number that designates the IO pattern.  The default is a
+text pattern that is human readable.  Use ? to print out the available
+patterns.
 .It Fl r
 Randomize I/O size between 1 and
 .Ar max-io-size .
