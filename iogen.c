@@ -615,7 +615,7 @@ run_io(void)
 int
 main(int argc, char *argv[])
 {
-	char		ch;
+	int		ch;
 	int		i, nr_proc = 1;
 	struct stat	sb;
 
