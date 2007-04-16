@@ -115,6 +115,9 @@ Whenever an I/O process receives a
 signal, it prints statistical values to
 .Xr stderr 4
 at its earliest convenience.
+.Pp
+Whenever iogen runs into data corruption or a failed read or write it will
+terminate all child processes.
 .Sh EXAMPLES
 Run iogen with all defaults in the current working directory:
 .Pp
