@@ -88,6 +88,10 @@ Under heavy I/O this value can be skewed due to
 the asynchronous nature of
 .Xr alarm 3 .
 The default is 60 seconds.
+.It Fl T Ar I/O timeout
+This determines the maximum time an I/O run is allowed to take to complete.
+If the timeout is reached all iogen processes will be terminated.
+The default is disabled.
 .El
 .Pp
 Although the algorithm for I/O generation is incredibly simple,
